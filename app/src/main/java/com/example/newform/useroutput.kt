@@ -13,12 +13,12 @@ class useroutput : AppCompatActivity() {
         setContentView(binding.root)
         val ufirstname=intent.getStringExtra("firstname")
         val ulastname=intent.getStringExtra("lastname")
-        val umobile1=intent.getStringExtra("Mobile number")
-        val umobile2=intent.getStringExtra("Alternative ")
+        val umobile1=intent.getStringExtra("number")
+        val umobile2=intent.getStringExtra("alternative ")
         val uemail=intent.getStringExtra("email")
         val ugender=intent.getStringExtra("gender")
         val  uhobbies=intent.getStringExtra("hobbies")
-        binding.information.text="Name :$ufirstname $ulastname \n Mobile number: $umobile1\n  Email:$uemail\n Alternative :$umobile2 \n Gender : $ugender Hobbies:$uhobbies "
+        binding.information.text="Name :$ufirstname $ulastname \n Mobile number: $umobile1\n  Email:$uemail\n Alternative :$umobile2 \n Gender : $ugender\n Hobbies:$uhobbies "
 
     }
 }
